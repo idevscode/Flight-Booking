@@ -6,9 +6,12 @@
 //
 
 import Foundation
+<<<<<<< HEAD
 
 
 struct Validator{
     
     
 }
+=======
+>>>>>>> login_ui
