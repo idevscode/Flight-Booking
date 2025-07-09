@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //
 //  LayoutP.swift
 //  FlightBooking
@@ -27,3 +28,4 @@ struct LayoutP: View {
 #Preview {
     LayoutP()
 }
+
