@@ -8,17 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("isLoggedIn") var isLoggedIn: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if !isLoggedIn {
+            LoginScreen()
+        } else {
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Hello, world!")
+            }
+            .padding()
         }
-        .padding()
+        
     }
 }
 
 #Preview {
-    ContentView()
+    @Previewable var isLoggedIn: Bool = false
+    ContentView(isLoggedIn: isLoggedIn)
 }

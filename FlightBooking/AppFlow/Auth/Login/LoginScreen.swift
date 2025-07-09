@@ -14,20 +14,16 @@ struct LoginScreen: View {
     var body: some View {
         VStack{
             Spacer().frame(height: 50)
-            Text("").appRichText()
+            AppLogo(
+                leadingText: "Flight",
+                trailingText: "Booking",
+                leadingColor: .white,
+                trailingColor: .red)
             Spacer()
                 .frame(height: 40)
-            
             emailField
-                .padding(.bottom, 25)
-            
             passwordField
-                .textContentType(.password)
-                .padding(.bottom, 50)
-            
             appButton
-            
-            
         }
         .frame(maxHeight: .infinity, alignment: .top)
     }
@@ -37,12 +33,17 @@ struct LoginScreen: View {
     var emailField: some View {
         TextField("Email", text: $email)
             .textFieldStyle()
+            .padding(.bottom, 25)
+            .autocapitalization(.none)
+            .keyboardType(.emailAddress)
     }
     
     @ViewBuilder
     var passwordField: some View {
         SecureField("Password", text: $password)
             .textFieldStyle()
+            .textContentType(.password)
+            .padding(.bottom, 50)
     }
     
     var appButton: some View {

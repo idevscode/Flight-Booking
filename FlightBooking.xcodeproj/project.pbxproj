@@ -29,9 +29,33 @@
 		A3768B292E1776E70039E3EC /* FlightBookingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightBookingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A39789992E1A4EFF00632150 /* Exceptions for "FlightBooking" folder in "FlightBooking" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AppFlow/ReusableComponents/LayoutP.swift,
+			);
+			target = A3768B102E1776E40039E3EC /* FlightBooking */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		A397899A2E1A4EFF00632150 /* Exceptions for "FlightBooking" folder in "Copy Bundle Resources" phase from "FlightBooking" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = A3768B0F2E1776E40039E3EC /* Resources */;
+			membershipExceptions = (
+				AppFlow/ReusableComponents/LayoutP.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A3768B132E1776E40039E3EC /* FlightBooking */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A39789992E1A4EFF00632150 /* Exceptions for "FlightBooking" folder in "FlightBooking" target */,
+				A397899A2E1A4EFF00632150 /* Exceptions for "FlightBooking" folder in "Copy Bundle Resources" phase from "FlightBooking" target */,
+			);
 			path = FlightBooking;
 			sourceTree = "<group>";
 		};
